@@ -1,0 +1,52 @@
+// Variables
+@import 'variables';
+
+@import 'theme.css';
+ 
+@import "~filepond/dist/filepond.min.css";
+@import "~filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css";
+@import '~filepond-plugin-image-edit/dist/filepond-plugin-image-edit.css';
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+.main-content {
+    padding: 75px 20px 20px !important;
+}
+
+.dropdown-menu-c {
+    width: 200px !important;
+}
+
+.action-btn {
+    color: #020202 !important;
+    border: unset !important;
+    background-color: unset !important;
+    border-radius: 50% !important;
+    padding: 0.1rem 0.5rem !important;
+}
+
+.action-btn:hover {
+    background-color: #dce4eb !important;
+}
+.action-btn:focus {
+     background-color: #dce4eb !important;
+     box-shadow: unset !important;
+}
+
+.action-dropdown {
+    padding: 0.1rem 0 !important;
+    min-width: 8rem;
+}
+
+.action-divider {
+    margin: 0.1rem 0 !important;
+}
+
+.filepond--wrapper {
+    width: 15rem !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 33px !important;
+}
+
