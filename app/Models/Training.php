@@ -27,9 +27,9 @@ class Training extends Model
         return $this->belongsTo(EmployeeTrainAvail::class, 'tr_code', 'tr_code');
     }
 
-    public function Facilitators()
+    public function facilitators()
     {
-        return $this->belongsTo(Facilitator::class, 'facilcode', 'facilcode');
+        return $this->belongsTo(Facilitator::class, 'facilcode', 'fac_code');
     }
 
     public function getDevtTypeAttribute()
