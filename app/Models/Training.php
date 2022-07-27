@@ -32,6 +32,10 @@ class Training extends Model
         return $this->belongsTo(Facilitator::class, 'facilcode', 'fac_code');
     }
 
+    public function Sponsors(){
+        return $this->hasOne(Sponsor::class, 'spon_code', 'tr_sponcode');
+    }
+
     public function getDevtTypeAttribute()
     {
         $data = "";

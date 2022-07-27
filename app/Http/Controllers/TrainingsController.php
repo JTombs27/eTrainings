@@ -58,8 +58,8 @@ class TrainingsController extends Controller
         ->with(['reftrain'=> function($query_x){
             $query_x->select('train_num','train_desc');
         }])
-        ->with(['facilitators'=> function($query_y){
-            $query_y->select('fac_code','fac_name');
+        ->with(['Sponsors'=> function($query_y){
+            $query_y->select('spon_code','sp_name');
         }])
         ->with(['TrainAvail'=> function($query_p) use($searchItem){
             $query_p->where('fempidno',$searchItem);
@@ -71,7 +71,7 @@ class TrainingsController extends Controller
                       {
                         $q->where('fempidno',$searchItem);
                   })
-        ->select('train_id','tr_dtefr','tr_dteto','tr_hours','tr_code','venuecode','ref_train_train_num','facilcode')
+        ->select('train_id','tr_dtefr','tr_dteto','tr_hours','tr_code','venuecode','ref_train_train_num','facilcode','tr_sponcode')
         ->orderBy('tr_dtefr', 'DESC')
         ->get();
         //$data = json_encode($data->where('TrainAvail.fempidno', $searchItem));
